@@ -57,3 +57,9 @@ print "Converting %d lbs to kilos - %r" % (lb, lb_to_kilo)
 # outputs the following
 # Converting 5 inches to centimeters - 12.7
 # Converting 12 lbs to kilos - 5.443104
+
+print "rounding numbers, specificially inch_to_cent, or %r using the round() function" % inch_to_cent
+print round(lb_to_kilo)
+# output shows the following
+# rounding numbers, specificially inch_to_cent, or 12.7 using the round() function
+# 5.0
