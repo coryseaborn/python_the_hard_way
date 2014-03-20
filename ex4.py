@@ -31,3 +31,8 @@ print "we need to put about", average_passengers_per_car, "in each car."
 # We can transport 120.0 people today.
 # We have 90 to carpool today.
 # we need to put about 3 in each car.
+
+# outputs 60, which is correct, 90 - 30
+print passengers - drivers
+# outputs 34.0. uses a floating point, because space_in_a_car is a floating point
+print space_in_a_car + drivers
