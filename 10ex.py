@@ -54,3 +54,29 @@ print test1_cat
 # Testing double quotes.
 # Don't ask why.
 # Maybe I "should" ask.
+
+x = "testing with escaped single \' quote, don't"
+y = "testing with escaped double \" quote, because we \"should\" do it"
+
+print x
+print y
+
+# above outputs the following
+# testing with escaped single ' quote, don't
+# testing with escaped double " quote, because we "should" do it
+
+print "\n"
+print "%r" % x
+print "%r" % y
+
+# above outputs the following in raw format
+# "testing with escaped single ' quote, don't"
+# 'testing with escaped double " quote, because we "should" do it'
+
+print "\n"
+print "%s" % x
+print "%s" % y
+
+# above outputs the following in string
+# testing with escaped single ' quote, don't
+# testing with escaped double " quote, because we "should" do it
