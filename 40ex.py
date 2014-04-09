@@ -48,3 +48,37 @@ print x.r, x.i
 
 # outputs the following
 # 3.0 -4.5
+
+
+
+# Another example of how to call the class like it's function:
+# 
+# >>> class MyStuff(object):
+# ...     def __init__(self):
+# ...             self.tangerine = "And now a thousand years between"
+# ...     def apple(self):
+# ...             print "I AM CLASSY APPLES!"
+# ... 
+# >>> thing = MyStuff()
+# >>> thing.apple()
+# I AM CLASSY APPLES!
+# >>> print thing.tangerine
+# And now a thousand years between
+# >>> 
+# 
+
+
+# and another because i need to learn this stuff
+# >>> class TestClass(object):
+# ...      def __init__(self):
+# ...              self.what = "Print a test thing!"
+# ...      def noway(self):
+# ...              print "Noway print this!"
+# ... 
+# >>> wut = TestClass()
+# >>> wut
+# <__main__.TestClass object at 0x1094968d0>
+# >>> wut.noway()
+# Noway print this!
+# >>> wut.what
+# 'Print a test thing!'
