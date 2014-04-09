@@ -1,0 +1,50 @@
+class Song(object):
+    
+    # the variables can be anything - anything can be changed
+    # this is just a placeholder and doesn't need to be 'self'
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+    # you use self. because it's clear you eman the instance attribute
+    # of self.lyrics, as opposed to not knowing if it's an instance's
+    # attribute or a local variable
+        
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print line
+            
+happy_bday = Song(["Happy birthday to you",
+                    "I don't want to get sued",
+                    "So I'll stop right there"])
+                    
+bulls_on_parade = Song(["They rally around the family",
+                        "With pockets full of shells"])
+                        
+test_song = Song(["Testing a brand new song"])
+
+test_song.sing_me_a_song()
+                        
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+# outputs the following
+# 
+# Happy birthday to you
+# I don't want to get sued
+# So I'll stop right there
+# They rally around the family
+# With pockets full of shells
+
+# simplified class is shown below, to understand the concept
+class Complex():
+    def __init__(self, realpart, imagpart):
+        self.r = realpart
+        self.i = imagpart
+ 
+# this gives arguments (3.0 and -4.5) to the class instantiation operator (init)
+# which are passed
+x = Complex(3.0, -4.5)
+print x.r, x.i
+
+# outputs the following
+# 3.0 -4.5
