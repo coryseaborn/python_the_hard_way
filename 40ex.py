@@ -82,3 +82,25 @@ print x.r, x.i
 # Noway print this!
 # >>> wut.what
 # 'Print a test thing!'
+
+# another one to drive it home, from ex 44
+
+class Parent(object):
+
+    def implicit(self):
+        print "PARENT implicit()"
+
+class Child(Parent):
+    pass
+
+# set the dad and son instance of the Parent and Child classes
+dad = Parent()
+son = Child()
+
+# from dad and son instances call the implicit function
+dad.implicit()
+son.implicit()
+
+# outputs the following
+# PARENT implicit()
+# PARENT implicit()

@@ -1,7 +1,7 @@
 ## Animal is-a object (yes, sort of confusing) lok at the extra credit
 class Animal(object):
     print "This is the Animal class!"
-    pass
+    pass # pass is used in the class to tell python that you want an empty block
     
 ## Dog is-a Animal
 class Dog(Animal):
