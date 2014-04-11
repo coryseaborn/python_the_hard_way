@@ -1,0 +1,1 @@
+print "Test file in my bin directory"
